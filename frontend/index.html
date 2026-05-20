@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin Agent — Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Devin Agent</h1>
+            <p class="subtitle">LLM-powered chat assistant</p>
+        </header>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="welcome-message">
+                <p>Send a message to start chatting with the AI assistant.</p>
+            </div>
+        </div>
+
+        <form class="input-area" id="chatForm">
+            <textarea
+                id="userInput"
+                placeholder="Type your message..."
+                rows="1"
+                autofocus
+            ></textarea>
+            <button type="submit" id="sendBtn" title="Send message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13"/>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
